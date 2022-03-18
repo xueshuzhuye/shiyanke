@@ -19,11 +19,12 @@ body {
 
 /* Dark mode */
 
-.dark-mode {
+/* .dark-mode {
   background-color:#525252;
   color: white;
 }
-  
+   */
+
 h1,
 h2,
 h3 {
@@ -56,9 +57,6 @@ h3 {
   color: rgb(0, 0, 0);
 }
 
-.dark-mode li a:hover  {
-  color: rgb(249, 249, 249);
-}
 .navigation div {
   color: rgb(0, 0, 0);
   padding: 8px 16px;
@@ -70,14 +68,6 @@ h3 {
   padding: 8px 8px;
   text-decoration: none;
 }
-
-/* 
-.dark-mode .navigation li a {
-  display: block;
-  color: rgb(189, 189, 189);
-  padding: 8px 8px;
-  text-decoration: none;
-} */
 
 .subnavigation {
   display: none;
@@ -97,11 +87,6 @@ a {
   text-decoration: none;
   color:#767676
 } 
-
-/* .dark-mode a{
-  text-decoration: none;
-  color: #ababab;
-} */
 
 /* Nice link animatinons by Gabriel Cojea*/
 
