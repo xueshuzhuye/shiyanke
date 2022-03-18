@@ -17,6 +17,17 @@ body {
   color: #444;
 }
 
+@media screen and (max-width: 480px) {
+  body {
+    min-width: 320px;
+    max-width: 480px;
+  }
+  img {
+    min-width: 320px;
+    max-width: 320px;
+  }
+}
+
 /* Dark mode */
 
 /* .dark-mode {
@@ -128,7 +139,7 @@ html{
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: white;
+  background-color: transparent;
   color: rgb(111, 111, 111); /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */
