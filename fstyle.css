@@ -16,6 +16,13 @@ body {
                sans-serif; /* Everything else */;
   color: #444;
 }
+
+/* Dark mode */
+
+.dark-mode {
+  background-color:#525252;
+  color: white;
+}
   
 h1,
 h2,
@@ -29,3 +36,181 @@ h3 {
   margin-right: auto;
 	width: 40%;
 }
+
+.inner {
+  position: relative;
+  max-width: 800px;
+  padding: 20px 10px;
+  margin: 0 auto;
+}
+
+.navigation {
+  margin-left: -3.5%;
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+/* Change the link color on hover */
+.navigation li a:hover {
+  color: rgb(0, 0, 0);
+}
+
+.dark-mode li a:hover  {
+  color: rgb(249, 249, 249);
+}
+.navigation div {
+  color: rgb(0, 0, 0);
+  padding: 8px 16px;
+}
+
+.navigation li a {
+  display: block;
+  color: rgb(116, 116, 116);
+  padding: 8px 8px;
+  text-decoration: none;
+}
+
+/* 
+.dark-mode .navigation li a {
+  display: block;
+  color: rgb(189, 189, 189);
+  padding: 8px 8px;
+  text-decoration: none;
+} */
+
+.subnavigation {
+  display: none;
+  position: absolute;
+  padding: 0;
+  list-style: none;
+  background-color: #ffffff;
+  z-index: 1;
+}
+
+.navigation li:hover .subnavigation {
+  display: block;
+}
+
+a {
+  position: relative;
+  text-decoration: none;
+  color:#767676
+} 
+
+/* .dark-mode a{
+  text-decoration: none;
+  color: #ababab;
+} */
+
+/* Nice link animatinons by Gabriel Cojea*/
+
+a::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color:#525252;
+  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* .dark-mode .underline::before{
+  background-color: #cdcdcd;
+} */
+
+@media (hover: hover) and (pointer: fine) {
+  a:hover::before{
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+}
+
+/* Smooth scroll */
+html{
+  scroll-behavior: smooth;
+}
+
+/* Back to top scroll */
+
+#myBtn {
+  display: block; /* Showing by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: white;
+  color: rgb(111, 111, 111); /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  font-size: 20px; /* Increase font size */
+}
+
+#myBtn:hover {
+  color: rgb(0, 0, 0); /* Text color on hover */
+}
+/* 
+.dark-mode #myBtn {
+  color: white;
+  background-color: #525252;
+}
+
+.dark-mode #myBtn:hover {
+  color: rgb(250, 250, 250); /* Text color on hover 
+} */
+
+#myToggle{
+  display:inline-block;
+padding:0.35em 1.2em;
+border:0.1em solid #000000;
+margin:0 0.3em 0.3em 0;
+border-radius:0.12em;
+box-sizing: border-box;
+text-decoration:none;
+font-family:'Roboto',sans-serif;
+font-weight:300;
+color:#000000;
+background-color: white;
+text-align:center;
+transition: all 0.2s;
+}
+#myToggle:hover{
+  color:#ffffff;
+  background-color:#505050;
+  }
+  @media all and (max-width:30em){
+  a.button1{
+  display:block;
+  margin:0.4em auto;
+  }
+}
+/* 
+.dark-mode #myToggle{
+  display:inline-block;
+padding:0.35em 1.2em;
+border:0.1em solid #828282;
+margin:0 0.3em 0.3em 0;
+border-radius:0.12em;
+box-sizing: border-box;
+text-decoration:none;
+font-family:'Roboto',sans-serif;
+font-weight:300;
+color:#c1c1c1;
+background-color: #767676;
+text-align:center;
+transition: all 0.2s;
+}
+.dark-mode #myToggle:hover{
+  color:#787878;
+  background-color:#cdcdcd;
+  }
+  @media all and (max-width:30em){
+  a.button1{
+  display:block;
+  margin:0.4em auto;
+  }
+} */
