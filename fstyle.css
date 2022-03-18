@@ -44,6 +44,10 @@ h3 {
   line-height:1.2;
 }
 
+h1 {
+  text-align: center;
+}
+
 .center {
   display: block;
   margin-left: auto;
@@ -59,7 +63,7 @@ h3 {
 }
 
 .navigation {
-  margin-left: -3.5%;
+  justify-content: center;
   display: flex;
   list-style: none;
   flex-wrap: wrap;
