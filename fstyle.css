@@ -72,7 +72,7 @@ h1 {
 
 /* Change the link color on hover */
 .navigation li a:hover {
-  color: rgb(0, 0, 0);
+  color: #669a80;
 }
 
 .navigation div {
@@ -82,7 +82,7 @@ h1 {
 
 .navigation li a {
   display: block;
-  color: rgb(116, 116, 116);
+  color:#669a80;
   padding: 8px 8px;
   text-decoration: none;
 }
@@ -103,7 +103,7 @@ h1 {
 a {
   position: relative;
   text-decoration: none;
-  color:#767676
+  color:#669a80;
 } 
 
 /* Nice link animatinons by Gabriel Cojea*/
@@ -115,7 +115,7 @@ a::before{
   right: 0;
   width: 0;
   height: 2px;
-  background-color:#525252;
+  background-color:#669a80;
   transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
