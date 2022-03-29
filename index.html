@@ -19,21 +19,22 @@
 	  changeKnees();
 	});
   </script>
-
 <script type="text/javascript">
    var mybutton = document.getElementById("myBtn");
    function topFunction() {
      document.body.scrollTop = 0; // For Safari
      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     }
-</script>
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function() {myFunction()};
+    </script>
 </head>
 
 <body>
 <button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
 
 <h1 id="Title">Pedro Tamaroff</h1>
-<ul class="navigation">
+<ul id="navbar" class="navigation">
     <li>
         <a href="#publications" class="navigation">Publications</a>
     </li>
@@ -54,7 +55,8 @@
 <p> I am currently a postdoctoral researcher at the <a href="https://www.mis.mpg.de/nlalg/members.html" 
   class="underline">non-linear algebra</a> research group
   of the MPIMiS in Leipzig. I completed my PhD at Trinity College Dublin under the direction of 
-  <a href="http://irma.math.unistra.fr/~dotsenko/" class="underline">Vladimir Dotsenko</a>. 
+  <a href="http://irma.math.unistra.fr/~dotsenko/" class="underline">Vladimir Dotsenko</a>. My dissertation
+  is available <a href="Thesis.pdf" class="underline">here</a>.
   I completed my undergraduate studies at the University of Buenos Aires, and wrote my thesis under 
   the direction of <a href="http://mate.dm.uba.ar/~aldoc9/" class="underline">Mariano</a> Suárez-Álvarez. 
   You may know me from <a href="http://math.stackexchange.com/" class="underline">math.SE</a>, where I am
@@ -85,7 +87,7 @@ Universität to work in the research group of <a href="https://www.mathematik.hu
   
 <h2 id="publications">Publications</h2>
 <ol>
-	<li><em><a href="https://link.springer.com/article/10.1007/s40062-022-00302-1"> Resolutions of operads arising from Koszul (bi)algebras</a></em>. Published in J. Homotopy Relat. Struct.</li> 
+	<li><em><a href="https://link.springer.com/article/10.1007/s40062-022-00302-1"> Resolutions of operads via Koszul (bi)algebras</a></em>. Published in J. Homotopy Relat. Struct.</li> 
   <li><em><a href="hhttps://www.tandfonline.com/doi/full/10.1080/00927872.2021.2021219">The cohomology of coalgebras in species</a></em>. Published in Commun. Algebra. </li> 
      <li><em>The Tamarkin--Tsygan Calculus of an algebra &agrave; la Stasheff</em>. Published in Homol. Homotopy Appl., <a href="https://dx.doi.org/10.4310/HHA.2021.v23.n2.a14">no. 23(2) pp. 257-282</a>. </li>
     <li><em>Endofunctors and Poincaré–Birkhoff–Witt Theorems</em>, with Vladimir Dotsenko. Published in Int. Math. Res. Notices, <a href="https://doi.org/10.1093/imrn/rnz369">rnz369</a>.

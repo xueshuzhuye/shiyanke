@@ -82,7 +82,7 @@ h1 {
 
 .navigation li a {
   display: block;
-  color:#669a80;
+  color:#669a80; 
   padding: 8px 8px;
   text-decoration: none;
 }
